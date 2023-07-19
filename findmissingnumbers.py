@@ -50,7 +50,7 @@ class Solution:
             return("None missing")
         numbers = sorted(numbers)
         end = []
-        for i in range(len(numbers)):
+        for i in range(numbers[0], numbers[-1]):
             if numbers[i] != i + 1:
                 end.append(int(i + 1))
         return end
