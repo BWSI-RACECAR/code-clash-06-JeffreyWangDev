@@ -48,7 +48,8 @@ class Solution:
             return "Invalid input"
         if len(numbersa) == 1:
             return("None missing")
-        return list(set(range(numbersa.sort()[0], numbersa.sort()[-1]+1)) - set(numbersa.sort()))
+        numbersa.sort()
+        return list(set(range(numbersa[0], numbersa[-1]+1)) - set(numbersa))
 
 def main():
     array = input().split(" ")
