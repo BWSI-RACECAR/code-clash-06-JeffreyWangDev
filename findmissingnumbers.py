@@ -49,9 +49,11 @@ class Solution:
         if len(numbers) == 1:
             return("None missing")
         numbers = sorted(numbers)
+        end = []
         for i in range(len(numbers)):
             if numbers[i] != i + 1:
-                return int(i + 1)
+                end.append(int(i + 1))
+        return end
 
 def main():
     array = input().split(" ")
