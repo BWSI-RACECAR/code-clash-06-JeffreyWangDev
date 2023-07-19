@@ -49,7 +49,8 @@ class Solution:
         if len(numbersa) == 1:
             return("None missing")
         numbers = []
-        for i in numbersa.sort():
+        numbersa.sort()
+        for i in numbersa:
             if i in numbers:
                 continue
             else:
