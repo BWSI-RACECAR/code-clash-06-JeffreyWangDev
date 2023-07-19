@@ -49,7 +49,7 @@ class Solution:
         if len(numbersa) == 1:
             return("None missing")
         numbersa.sort()
-        return list(set(range(numbersa[0], numbersa[-1]+1)) - set(numbersa))
+        return list(set(range(int(numbersa[0]), int(numbersa[-1]+1))) - set(numbersa))
 
 def main():
     array = input().split(" ")
