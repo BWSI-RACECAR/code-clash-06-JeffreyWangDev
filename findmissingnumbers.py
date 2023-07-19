@@ -48,7 +48,7 @@ class Solution:
             return "Invalid input"
         if len(numbers) == 1:
             return("None missing")
-        numbers = sorted(numbers)
+        numbers = numbers.sort()
         end = []
         for i in range(numbers[0], numbers[-1]):
             if numbers[i] != i + 1:
