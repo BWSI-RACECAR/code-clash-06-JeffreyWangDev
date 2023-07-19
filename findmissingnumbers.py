@@ -54,7 +54,7 @@ class Solution:
             if i in numbers:
                 continue
             else:
-                numbers.append(int(i))
+                numbers.append(round(i))
         end = []
         for i in range(numbers[0], numbers[-1]+1):
             end.append(i)
@@ -67,7 +67,6 @@ def main():
     tc1 = Solution()
     ans = tc1.findMissingNumbers(array)
     print(ans)
-
 if __name__ == "__main__":
     main()
     
